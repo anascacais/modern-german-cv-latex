@@ -19,6 +19,7 @@ This LaTeX template was adapted from a Word CV found at:
 ## 📸 Preview
 
 ![CV Preview](preview.png)
+
 [📄 View full PDF](PDF/preview.pdf)
 
 ## 📁 Files Included

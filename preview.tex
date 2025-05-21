@@ -124,6 +124,12 @@
     ] (box) {\color{black}\strut #1};
   }%
 }
+
+\newcommand{\highlightlink}[2]{%
+  \textcolor{tablecolor}{%
+  \href{#1}{#2}%
+  }%
+}
     
 %----------SECTION CUSTOM COMMANDS----------
 \titleformat{\section}[display]
@@ -226,8 +232,8 @@
 \section{Education}
 
 \resumeNoBulletItemListStart
-    \resumeEducation{PhD in this Course}{University X}{2018--2021}
-    \resumeEducation{MSc in that Course}{University Y}{2015--2018}
+    \resumeEducation{MSc in this Course}{University X}{2019--2021}
+    \resumeEducation{BSc in that Course}{University Y}{2016--2019}
 \resumeNoBulletItemListEnd
 
 \switchcolumn[1]
@@ -241,14 +247,14 @@
             \resumeItem{\lipsum[1][2]}
         \resumeItemListEnd
     }
-    \resumeExperience{Feb 2021}{Present}{Data Analyst}{Company A, Country}{
+    \resumeExperience{Jul 2022}{Nov 2024}{Data Analyst}{Company A, Country}{
       \resumeItemListStart
           \resumeItem{\lipsum[1][3]}
           \resumeItem{\lipsum[1][4]}
       \resumeItemListEnd
     }
     
-    \resumeExperience{Sep 2021}{Dec 2024}{Junior Data Analyst}{Company A, Country}{
+    \resumeExperience{Sep 2021}{Jun 2022}{Junior Data Analyst}{Company A, Country}{
       \resumeItemListStart
           \resumeItem{\lipsum[1][5]}
           \resumeItem{\lipsum[1][6]}
@@ -262,14 +268,14 @@
 \resumeHeadingListStart
     \resumeExperience{May 2024}{Present}{Cool Project}{Project Owner \& Lead Developer $\cdot$ Tech Stack}{
         \resumeItemListStart
-            \resumeItem{\lipsum[1][7-8]}
+            \resumeItem{\lipsum[1][7-8] \highlightlink{https://github.com/mygithub/cool-project}{(project link)}}
             \resumeItem{\lipsum[1][9]}
         \resumeItemListEnd
       }
 
     \resumeExperience{May 2024}{Jan 2025}{Another Cool Project}{Lead Developer $\cdot$ Tech Stack}{
         \resumeItemListStart
-            \resumeItem{\lipsum[1][10]}
+            \resumeItem{\lipsum[1][10]} \highlightlink{https://github.com/mygithub/another-cool-project}{(project link)}
             \resumeItem{\lipsum[1][11]}
         \resumeItemListEnd
     }
